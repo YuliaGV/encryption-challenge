@@ -12,25 +12,41 @@
 
 body{
     font-family: "Inter", sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     color:#0A3871;
     min-height: 100vh; 
-    background-color: #FAACA8;
-    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #6299dd 100%);
     
-   
 }
 
+h2{
+    font-weight: bold;
+}
 
 .logo-container{
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin: 1.5rem auto;
+    
+   
+}
+
+#alert{
+    border: 1px solid #000000;
+    margin: .5rem auto;
+    width: 400px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+  
 }
 
 .main-content{
-    margin: 1.5rem auto;
+    margin: .5rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -45,29 +61,35 @@ body{
 }
 
 
-.result-box, .text-input{
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-}
-
-.text-input{
-    margin: 1.5rem auto;
+#text-input{
+    margin: .5rem auto;
     width: 100%;
     height: auto; 
 }
 
-.no-result{
-    font-size: 24px;
+
+.result-box{
+    margin-top: .5rem;
+}
+
+
+#result-text{
+    margin-top: .5rem;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#no-result{  
     color: black;
-    margin: 1.5rem;
+  
    
 }
 
-.no-result p{
+#no-result p{
     font-weight: bold;
-    margin: 1rem auto;
+    margin: .5rem auto;
 }
 
 
@@ -85,29 +107,49 @@ body{
 .buttons{
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    font-size: 24px;
+    gap: 1rem;   
 }
 
 .buttons button{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 8px; 
     padding: .5rem .5rem;
-    width: 30%;
     height: 50px;
+    cursor: pointer;
 }
 
-.encrypt{
+
+
+
+#encrypt{
     color: white;
     background-color: #0A3871;
     
     
 }
 
-.decrypt{
+#decrypt, #clear {
     border: 1px solid #0A3871;
    
+}
+
+#encrypt:hover, #decrypt:hover, #clear:hover{
+    background-color: #000000;
+    color: #2586fc;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
 }

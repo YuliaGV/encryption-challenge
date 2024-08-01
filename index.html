@@ -17,21 +17,28 @@
 
     <main>
 
+        <div id="alert" class="hidden">
 
+        </div>
+
+        
         <div class="main-content">
 
             <div class="text-box">
-                <p>Ingrese el texto aquí: </p>
+                <h2>Ingrese el texto aquí: </h1>
 
-                <textarea class="text-input" id="text-input" rows="10" cols="50" autofocus></textarea>
+                <textarea id="text-input" rows="10" cols="50" autofocus></textarea>
 
-                <div class="buttons">
+                <div class="buttons"> 
 
-                    <button class="encrypt">
+                    <button id="encrypt">
                         Encriptar
                     </button>
-                    <button class="decrypt">
+                    <button id="decrypt">
                         Desencriptar
+                    </button>
+                    <button id="clear">
+                        Limpiar
                     </button>
                     
 
@@ -41,12 +48,14 @@
 
             <div class="result-box">
 
-                <div class="result-text">
+                <h2>Resultado: </h2>
+
+                <div id="result-text" >
 
 
 
                 </div>
-                <div class="no-result">
+                <div id="no-result" >
                     <img src="./assets/no-result.png" alt="No result" class="responsive-image"/>
                     <p>Ningún mensaje fue encontrado</p>
                     <span>Ingresa el texto que desees encriptar o desencriptar</span>
@@ -55,17 +64,17 @@
 
 
             </div>
-
-
         </div>
+
+       
+
+
+        
 
 
     </main>
    
-    
 
-
-    
     <script src="./script.js"></script>
 </body>
 </html>
