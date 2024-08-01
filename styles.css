@@ -28,6 +28,7 @@ h2{
     display: flex;
     justify-content: center; 
     align-items: center;
+    margin: .5rem auto;
     
    
 }
@@ -152,4 +153,22 @@ h2{
 .show {
     opacity: 1;
     visibility: visible;
+}
+
+
+.footer {
+    background-color: #0A3871;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
 }
